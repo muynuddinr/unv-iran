@@ -29,6 +29,11 @@ export async function middleware(request: NextRequest) {
     }
   }
   
+  // Add this at the beginning of the middleware function
+  if (path === '/admin') {
+    return NextResponse.redirect(new URL('/admin/dashboard', request.url));
+  }
+  
   return NextResponse.next();
 }
 
