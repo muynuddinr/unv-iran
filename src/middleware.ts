@@ -6,39 +6,38 @@ import { jwtVerify } from 'jose';
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
-  // Add this console log to debug
-  console.log('Middleware path:', path);
-  console.log('Cookie:', request.cookies.get('admin_token'));
-
   // Check if the path is an admin path (except login)
   if (path.startsWith('/admin') && !path.startsWith('/admin-login')) {
     const token = request.cookies.get('admin_token')?.value;
     
+    // If there's no token, redirect to login
     if (!token) {
-      const loginUrl = new URL('/admin-login', request.url);
-      return NextResponse.redirect(loginUrl);
+      return NextResponse.redirect(new URL('/admin-login', request.url));
     }
     
     try {
-      const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+      // Verify the token
+      const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'your-secret-key');
       await jwtVerify(token, secret);
+      
+      // If token is valid, continue
       return NextResponse.next();
     } catch (error) {
-      console.error('Token verification failed:', error);
-      const loginUrl = new URL('/admin-login', request.url);
-      return NextResponse.redirect(loginUrl);
+      // If token is invalid, redirect to login
+      console.error('Invalid token:', error);
+      return NextResponse.redirect(new URL('/admin-login', request.url));
     }
   }
-
-  // Handle root admin redirect
+  
+  // Add this at the beginning of the middleware function
   if (path === '/admin') {
     return NextResponse.redirect(new URL('/admin/dashboard', request.url));
   }
-
+  
   return NextResponse.next();
 }
 
-// Add config to specify paths
+// See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/admin/:path*', '/admin-login']
+  matcher: ['/admin/:path*'],
 };
