@@ -343,47 +343,6 @@ const Stadium = () => {
           </div>
         </section>
 
-        {/* Success Story Section */}
-        <section className="py-16 bg-gradient-to-r from-orange-50 to-yellow-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-                <div className="p-8 md:p-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('home.stadium.successStoryTitle') || 'Success Story: Azadi Stadium Implementation'}</h2>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.stadium.successStoryParagraph1') || "One of Iran's largest sports venues faced challenges with monitoring large crowds during international matches and maintaining security standards required by AFC."}
-                      </p>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.stadium.successStoryParagraph2') || "After implementing Uniview's comprehensive security camera solution, including high-resolution cameras and advanced monitoring systems, the stadium achieved:"}
-                      </p>
-                      <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-                        <li><strong>{t('home.stadium.successStoryBenefit1') || 'Complete coverage'}</strong> {t('home.stadium.successStoryBenefit1Detail') || 'of all stadium areas with HD surveillance'}</li>
-                        <li><strong>{t('home.stadium.successStoryBenefit2') || 'Real-time monitoring'}</strong> {t('home.stadium.successStoryBenefit2Detail') || 'of crowd movements and behavior'}</li>
-                        <li><strong>{t('home.stadium.successStoryBenefit3') || 'Enhanced compliance'}</strong> {t('home.stadium.successStoryBenefit3Detail') || 'with international football security standards'}</li>
-                        <li><strong>{t('home.stadium.successStoryBenefit4') || 'Improved coordination'}</strong> {t('home.stadium.successStoryBenefit4Detail') || 'with security personnel during major events'}</li>
-                        <li>{t('home.stadium.successStoryBenefit5') || 'Successful integration with existing security infrastructure'}</li>
-                      </ul>
-                      <p className="text-gray-700">
-                        {t('home.stadium.successStoryParagraph3') || "The implementation has become a benchmark for stadium security solutions in Iran, demonstrating Uniview's capability to meet international standards while addressing local requirements."}
-                      </p>
-                    </div>
-                    <div className="relative h-80 md:h-96">
-                      <Image 
-                        src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                        alt={t('home.stadium.successStoryImageAlt') || "Stadium security command center"} 
-                        fill
-                        className="object-cover rounded-xl"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-16 bg-white">

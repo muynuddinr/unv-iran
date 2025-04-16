@@ -350,48 +350,7 @@ const ShoppingMall = () => {
           </div>
         </section>
 
-        {/* Case Study Section */}
-        <section className="py-16 bg-gradient-to-r from-pink-50 to-purple-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-                <div className="p-8 md:p-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('home.shoppingMall.caseStudyTitle') || 'Success Story: Tehran Grand Bazaar Modern Shopping Complex'}</h2>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.shoppingMall.caseStudyParagraph1') || "One of Tehran's largest shopping complexes, featuring over 100 stores across multiple floors, faced challenges with security monitoring and theft prevention."}
-                      </p>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.shoppingMall.caseStudyParagraph2') || "After implementing Uniview Iran's comprehensive security solution, including high-resolution cameras and intelligent video analytics, they achieved:"}
-                      </p>
-                      <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-                        <li>{t('home.shoppingMall.caseStudyBullet1') || '<strong>40% reduction</strong> in security incidents'}</li>
-                        <li>{t('home.shoppingMall.caseStudyBullet2') || '<strong>30% decrease</strong> in shoplifting cases'}</li>
-                        <li>{t('home.shoppingMall.caseStudyBullet3') || '<strong>50% improvement</strong> in incident response time'}</li>
-                        <li>{t('home.shoppingMall.caseStudyBullet4') || '<strong>Significant enhancement</strong> in visitor safety perception'}</li>
-                        <li>{t('home.shoppingMall.caseStudyBullet5') || '24/7 professional technical support'}</li>
-                      </ul>
-                      <p className="text-gray-700">
-                        {t('home.shoppingMall.caseStudyConclusion') || "The installation has become a benchmark for modern retail security solutions in Iran, demonstrating the effectiveness of Uniview's technology in local market conditions."}
-                      </p>
-                    </div>
-                    
-                    <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
-                      <Image 
-                        src="https://images.unsplash.com/photo-1555529771-122e5d9f2341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt={t('home.shoppingMall.caseStudyImageAlt') || "Shopping Mall Security Command Center"}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* CTA Section */}
         <section className="py-16 bg-white">

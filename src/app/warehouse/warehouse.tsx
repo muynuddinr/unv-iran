@@ -261,78 +261,7 @@ const Warehouse = () => {
         </div>
       </section>
 
-      {/* Advanced Features Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('home.warehouse.advancedTitle') || 'Advanced Security Technologies'}</h2>
-                <p className="text-gray-700 mb-6">
-                  {t('home.warehouse.advancedDescription') || 'Uniview integrates cutting-edge technologies into our warehouse security solutions to address the evolving challenges of logistics environments:'}
-                </p>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-6 h-6 bg-cyan-100 rounded-full flex items-center justify-center">
-                        <FiAlertTriangle className="text-cyan-600 text-sm" />
-                      </div>
-                    </div>
-                    <div className="ml-3">
-                      <h4 className="text-lg font-semibold text-gray-800">{t('home.warehouse.advancedFeature1Title') || 'AI-Powered Video Analytics'}</h4>
-                      <p className="text-gray-600">{t('home.warehouse.advancedFeature1Description') || 'Intelligent algorithms that detect unusual patterns, identify potential security breaches, and provide real-time alerts.'}</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-6 h-6 bg-cyan-100 rounded-full flex items-center justify-center">
-                        <FiMap className="text-cyan-600 text-sm" />
-                      </div>
-                    </div>
-                    <div className="ml-3">
-                      <h4 className="text-lg font-semibold text-gray-800">{t('home.warehouse.advancedFeature2Title') || 'RFID Integration'}</h4>
-                      <p className="text-gray-600">{t('home.warehouse.advancedFeature2Description') || 'Synchronize security footage with RFID tracking to create a comprehensive inventory monitoring system with enhanced accountability.'}</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-6 h-6 bg-cyan-100 rounded-full flex items-center justify-center">
-                        <FiTruck className="text-cyan-600 text-sm" />
-                      </div>
-                    </div>
-                    <div className="ml-3">
-                      <h4 className="text-lg font-semibold text-gray-800">{t('home.warehouse.advancedFeature3Title') || 'Vehicle Management'}</h4>
-                      <p className="text-gray-600">{t('home.warehouse.advancedFeature3Description') || 'Automated license plate recognition, driver identification, and vehicle tracking to enhance logistics security and efficiency.'}</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-6 h-6 bg-cyan-100 rounded-full flex items-center justify-center">
-                        <FiShield className="text-cyan-600 text-sm" />
-                      </div>
-                    </div>
-                    <div className="ml-3">
-                      <h4 className="text-lg font-semibold text-gray-800">{t('home.warehouse.advancedFeature4Title') || 'Environmental Monitoring'}</h4>
-                      <p className="text-gray-600">{t('home.warehouse.advancedFeature4Description') || 'Temperature, humidity, and environmental sensors integrated with security systems to protect sensitive inventory and detect potential hazards.'}</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="relative">
-                <div className="rounded-xl overflow-hidden shadow-2xl">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1586528116493-9f31b0b6a6e5" 
-                    alt={t('home.warehouse.advancedImageAlt') || "Advanced Warehouse Security"} 
-                    width={600} 
-                    height={400} 
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Applications Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 to-cyan-50">
@@ -399,50 +328,6 @@ const Warehouse = () => {
         </div>
       </section>
 
-      {/* Case Study Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-              <div className="p-8 md:p-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('home.warehouse.caseStudyTitle') || 'Success Story: Iranian Logistics Provider'}</h2>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                  <div>
-                    <p className="text-gray-700 mb-6">
-                      {t('home.warehouse.caseStudyParagraph1') || 'A major Iranian logistics company operating multiple distribution centers across the country faced challenges with inventory security, operational visibility, and monitoring efficiency.'}
-                    </p>
-                    <p className="text-gray-700 mb-6">
-                      {t('home.warehouse.caseStudyParagraph2') || 'After implementing Uniview\'s comprehensive security camera solution with advanced analytics and monitoring systems, they achieved:'}
-                    </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-                      <li>{t('home.warehouse.caseStudyBullet1') || '<strong>35% reduction</strong> in security incidents within the first year'}</li>
-                      <li>{t('home.warehouse.caseStudyBullet2') || '<strong>25% improvement</strong> in operational efficiency'}</li>
-                      <li>{t('home.warehouse.caseStudyBullet3') || '<strong>40% decrease</strong> in inventory losses'}</li>
-                      <li>{t('home.warehouse.caseStudyBullet4') || '<strong>Complete monitoring coverage</strong> across all critical areas'}</li>
-                      <li>{t('home.warehouse.caseStudyBullet5') || 'Return on investment achieved within 18 months'}</li>
-                    </ul>
-                    <p className="text-gray-700">
-                      {t('home.warehouse.caseStudyParagraph3') || 'The company particularly valued our local support and expertise in implementing Uniview\'s advanced security solutions to meet their specific requirements.'}
-                    </p>
-                  </div>
-                  <div className="relative">
-                    <div className="rounded-xl overflow-hidden shadow-lg">
-                      <Image 
-                        src="https://images.unsplash.com/photo-1553413077-190dd305871c" 
-                        alt={t('home.warehouse.caseStudyImageAlt') || "Warehouse Success Story"} 
-                        width={500} 
-                        height={400} 
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-white">

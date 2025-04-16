@@ -352,47 +352,6 @@ const SmartIntrusionPrevention = () => {
           </div>
         </section>
 
-        {/* Success Story Section */}
-        <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-                <div className="p-8 md:p-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('home.intrusion.successStoryTitle') || 'Success Story: Tehran Commercial Complex'}</h2>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.intrusion.successStoryParagraph1') || 'A major commercial complex in Tehran, spanning over 30,000 square meters, needed to upgrade their outdated surveillance system to address security challenges and monitoring inefficiencies.'}
-                      </p>
-                      <p className="text-gray-700 mb-6">
-                        {t('home.intrusion.successStoryParagraph2') || 'After implementing Uniview Iran\'s smart security camera solution with AI-powered analytics, they achieved:'}
-                      </p>
-                      <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-                        <li>{t('home.intrusion.successStoryBullet1') || '<strong>Complete coverage</strong> of all critical areas with HD clarity'}</li>
-                        <li>{t('home.intrusion.successStoryBullet2') || '<strong>90% improvement</strong> in incident response time'}</li>
-                        <li>{t('home.intrusion.successStoryBullet3') || '<strong>24/7 intelligent monitoring</strong> with automated alerts'}</li>
-                        <li>{t('home.intrusion.successStoryBullet4') || '<strong>50% reduction</strong> in security-related incidents'}</li>
-                        <li>{t('home.intrusion.successStoryBullet5') || 'Significant cost savings in security operations'}</li>
-                      </ul>
-                      <p className="text-gray-700">
-                        {t('home.intrusion.successStoryConclusion') || 'The implementation has transformed their security operations, providing clear evidence for investigations and deterring potential security threats while streamlining their monitoring processes.'}
-                      </p>
-                    </div>
-                    <div className="relative h-80 md:h-full min-h-[300px]">
-                      <Image 
-                        src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-                        alt={t('home.intrusion.successStoryImageAlt') || "Data Center Security"}
-                        fill
-                        className="object-cover rounded-xl"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-16 bg-white">
