@@ -22,7 +22,7 @@ const TopBar = () => {
               <span className="hidden xs:inline">{t('header.email')}</span>
             </a>
             <a 
-              href="tel:+15551234567" 
+              href="tel:+971 559025905" 
               className="flex items-center text-gray-600 hover:text-blue-600 text-xs sm:text-sm transition-colors"
               aria-label="Call Us"
             >

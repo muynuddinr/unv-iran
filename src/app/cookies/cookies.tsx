@@ -199,8 +199,7 @@ const Cookies = () => {
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-gray-700 mb-2"><strong>{t('home.cookies.contactCompany') || 'Uniview Iran'}</strong></p>
                   <p className="text-gray-700 mb-2">{t('home.cookies.contactEmail') || 'Email: privacy@uniview-iran.com'}</p>
-                  <p className="text-gray-700 mb-2">{t('home.cookies.contactPhone') || 'Phone: +98 21 XXXX XXXX'}</p>
-                  <p className="text-gray-700">{t('home.cookies.contactAddress') || 'Address: [Your Address in Iran]'}</p>
+                  <p className="text-gray-700 mb-2">{t('home.cookies.contactPhone') || 'Phone: +971 559025905'}</p>
                 </div>
               </div>
             </div>

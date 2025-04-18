@@ -192,7 +192,7 @@ const ContactPage = () => {
                       href="tel:+1-555-123-4567" 
                       className="text-blue-800 hover:text-blue-600 font-medium"
                     >
-                      +1 (555) 123-4567
+                      +971 559025905
                     </a>
                   </div>
                 </div>
@@ -261,7 +261,7 @@ const ContactPage = () => {
                     id="phone"
                     type="tel"
                     name="phone"
-                    placeholder={t('home.contact.phonePlaceholder') || "+1 (555) 123-4567"}
+                    placeholder={t('home.contact.phonePlaceholder') || "+971 559025905"}
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300
