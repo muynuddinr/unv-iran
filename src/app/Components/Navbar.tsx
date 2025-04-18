@@ -9,7 +9,7 @@ import {
   FiHome, FiBox, FiTool, FiInfo, FiSend,
   FiChevronDown, FiChevronRight, FiCamera, FiGlobe, FiHardDrive, FiLock
 } from 'react-icons/fi';
-import logo from '../../../public/UNV-IRAN.png'
+import logo from '../../../public/logo_new-removebg-preview.png'
 import { IconType } from 'react-icons';
 import { useLanguage } from '../../context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -248,7 +248,7 @@ const Navbar = () => {
                   alt="Uniview Logo"
                   width={200}
                   height={200}
-                  className="w-auto h-16 group-hover:drop-shadow-md object-contain drop-shadow-sm"
+                  className="w-auto h-12 group-hover:drop-shadow-md object-contain drop-shadow-sm"
                   priority
                   loading="eager"
                   quality={100}
