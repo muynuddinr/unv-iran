@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/smart-Intrusion-Prevention',
+        canonical: 'https://unv-iran.com/smart-Intrusion-Prevention',
         languages: {
             'en-US': '/en/smart-Intrusion-Prevention',
             'fa-IR': '/fa/smart-Intrusion-Prevention',

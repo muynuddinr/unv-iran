@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/hospital',
+        canonical: 'https://unv-iran.com/hospital',
         languages: {
             'en-US': '/en/hospital',
             'fa-IR': '/fa/hospital',

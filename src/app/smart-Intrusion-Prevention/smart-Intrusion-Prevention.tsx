@@ -36,7 +36,7 @@ const SmartIntrusionPrevention = () => {
     "brand": {
       "@type": "Brand",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "category": "Security Systems",
     "keywords": "smart security Iran, AI surveillance, intrusion prevention, دوربین مداربسته هوشمند, سیستم امنیتی هوشمند, نظارت تصویری هوشمند",
@@ -46,9 +46,9 @@ const SmartIntrusionPrevention = () => {
       "audienceType": "Business & Property Owners"
     },
     "image": [
-      "https://www.uniview-iran.ir/smart/Advanced%20Security%20Camera%20Solutions.webp",
-      "https://www.uniview-iran.ir/smart/Commercial%20Buildings.webp",
-      "https://www.uniview-iran.ir/smart/Critical%20Infrastructure.webp"
+      "https://unv-iran.com/smart/Advanced%20Security%20Camera%20Solutions.webp",
+      "https://unv-iran.com/smart/Commercial%20Buildings.webp",
+      "https://unv-iran.com/smart/Critical%20Infrastructure.webp"
     ]
   };
 

@@ -34,7 +34,7 @@ const Stadium = () => {
     "brand": {
       "@type": "Brand",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "offers": {
       "@type": "AggregateOffer",

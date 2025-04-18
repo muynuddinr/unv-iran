@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/school',
+        canonical: 'https://unv-iran.com/school',
         languages: {
             'en-US': '/en/school',
             'fa-IR': '/fa/school',

@@ -18,7 +18,7 @@ const Privacy = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "inLanguage": ["en", "fa"],
     "isAccessibleForFree": true,
@@ -30,13 +30,13 @@ const Privacy = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.uniview-iran.ir"
+          "item": "https://unv-iran.com"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Privacy Policy",
-          "item": "https://www.uniview-iran.ir/privacy"
+          "item": "https://unv-iran.com/privacy"
         }
       ]
     }

@@ -34,7 +34,7 @@ const ShoppingMall = () => {
     "brand": {
       "@type": "Brand",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "category": "Security Systems",
     "keywords": "shopping mall security Iran, mall surveillance, mall CCTV, دوربین مداربسته مرکز خرید, سیستم امنیتی پاساژ, نظارت تصویری مجتمع تجاری",
@@ -44,9 +44,9 @@ const ShoppingMall = () => {
       "audienceType": "Shopping Mall Management"
     },
     "image": [
-      "https://www.uniview-iran.ir/shopping%20mall/Shopping%20mall.webp",
-      "https://www.uniview-iran.ir/shopping%20mall/Traditional%20Enclosed%20Malls.webp",
-      "https://www.uniview-iran.ir/shopping%20mall/Open-Air%20Shopping%20Centers.webp"
+      "https://unv-iran.com/shopping%20mall/Shopping%20mall.webp",
+      "https://unv-iran.com/shopping%20mall/Traditional%20Enclosed%20Malls.webp",
+      "https://unv-iran.com/shopping%20mall/Open-Air%20Shopping%20Centers.webp"
     ]
   };
   

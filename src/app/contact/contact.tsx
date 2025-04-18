@@ -14,7 +14,7 @@ const ContactPage = () => {
     "@type": "ContactPage",
     "name": "Contact Uniview Iran",
     "description": "Contact Uniview Iran for security solutions and surveillance systems. Get in touch with our expert team for consultation and support.",
-    "url": "https://www.uniview-iran.ir/contact",
+    "url": "https://unv-iran.com/contact",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+1-555-123-4567",
@@ -129,13 +129,13 @@ const ContactPage = () => {
         {/* Open Graph / Social Media Meta Tags */}
         <meta property="og:title" content="Contact Uniview Iran | تماس با یونی ویو ایران" />
         <meta property="og:description" content="Get in touch with Uniview Iran for professional security solutions and expert support. | تماس با یونی ویو ایران برای راهکارهای امنیتی حرفه‌ای" />
-        <meta property="og:url" content="https://www.uniview-iran.ir/contact" />
+        <meta property="og:url" content="https://unv-iran.com/contact" />
         <meta property="og:type" content="website" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English, Persian" />
-        <link rel="canonical" href="https://www.uniview-iran.ir/contact" />
+        <link rel="canonical" href="https://unv-iran.com/contact" />
         
         {/* Structured Data */}
         <script

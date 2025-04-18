@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/hotel',
+        canonical: 'https://unv-iran.com/hotel',
         languages: {
             'en-US': '/en/hotel',
             'fa-IR': '/fa/hotel',

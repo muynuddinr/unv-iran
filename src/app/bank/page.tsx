@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/bank',
+        canonical: 'https://unv-iran.com/bank',
     }
 }
 

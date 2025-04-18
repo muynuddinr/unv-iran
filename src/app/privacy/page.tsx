@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/privacy',
+        canonical: 'https://unv-iran.com/privacy',
         languages: {
             'en-US': '/en/privacy',
             'fa-IR': '/fa/privacy',

@@ -42,7 +42,7 @@ const Hotel = () => {
     "brand": {
       "@type": "Brand",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "category": "Security Systems",
     "keywords": "hotel security Iran, hotel surveillance, access control hotels, CCTV hotel, دوربین مداربسته هتل, سیستم امنیتی هتل",
@@ -58,13 +58,13 @@ const Hotel = () => {
       "seller": {
         "@type": "Organization",
         "name": "Uniview Iran",
-        "url": "https://www.uniview-iran.ir"
+        "url": "https://unv-iran.com"
       }
     },
     "image": [
-      "https://www.uniview-iran.ir/hotel/Leading%20Hotel%20Security%20banner.webp",
-      "https://www.uniview-iran.ir/hotel/Luxury%20Hotels.webp",
-      "https://www.uniview-iran.ir/hotel/Resort%20Properties.webp"
+      "https://unv-iran.com/hotel/Leading%20Hotel%20Security%20banner.webp",
+      "https://unv-iran.com/hotel/Luxury%20Hotels.webp",
+      "https://unv-iran.com/hotel/Resort%20Properties.webp"
     ]
   };
 

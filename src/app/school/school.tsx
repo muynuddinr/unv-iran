@@ -34,7 +34,7 @@ const School = () => {
     "brand": {
       "@type": "Brand",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "category": "Security Systems",
     "keywords": "school security Iran, educational surveillance, school CCTV, دوربین مداربسته مدرسه, سیستم امنیتی دانشگاه, نظارت تصویری مدارس",
@@ -44,9 +44,9 @@ const School = () => {
       "audienceType": "Educational Institutions"
     },
     "image": [
-      "https://www.uniview-iran.ir/school/School%20banner.webp",
-      "https://www.uniview-iran.ir/school/K-12%20Schools.webp",
-      "https://www.uniview-iran.ir/school/College%20Campuses.webp"
+      "https://unv-iran.com/school/School%20banner.webp",
+      "https://unv-iran.com/school/K-12%20Schools.webp",
+      "https://unv-iran.com/school/College%20Campuses.webp"
     ]
   };
 

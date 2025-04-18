@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Cookie Policy | سیاست کوکی - Uniview Iran',
         description: 'Understanding how Uniview Iran uses cookies to enhance your security solutions experience.',
-        url: 'https://www.uniview-iran.ir/cookies',
+        url: 'https://unv-iran.com/cookies',
         type: 'website',
         locale: 'fa_IR',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/cookies',
+        canonical: 'https://unv-iran.com/cookies',
         languages: {
             'en-US': '/en/cookies',
             'fa-IR': '/fa/cookies',

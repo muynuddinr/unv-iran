@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Contact Uniview Iran | تماس با یونی ویو ایران',
         description: 'Get in touch with Uniview Iran for professional security solutions and expert support.',
-        url: 'https://www.uniview-iran.ir/contact',
+        url: 'https://unv-iran.com/contact',
         type: 'website',
         locale: 'fa_IR',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/contact',
+        canonical: 'https://unv-iran.com/contact',
         languages: {
             'en-US': '/en/contact',
             'fa-IR': '/fa/contact',

@@ -17,7 +17,7 @@ const Terms = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "inLanguage": ["en", "fa"],
     "isAccessibleForFree": true,

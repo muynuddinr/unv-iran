@@ -64,12 +64,12 @@ const Bank = () => {
       "seller": {
         "@type": "Organization",
         "name": "Uniview Iran",
-        "url": "https://www.uniview-iran.ir"
+        "url": "https://unv-iran.com"
       }
     },
     "image": [
-      "https://www.uniview-iran.ir/bank/Bank banner.webp",
-      "https://www.uniview-iran.ir/bank/Retail Bank.webp"
+      "https://unv-iran.com/bank/Bank banner.webp",
+      "https://unv-iran.com/bank/Retail Bank.webp"
     ]
   };
 
@@ -83,22 +83,22 @@ const Bank = () => {
         {/* Open Graph / Social Media Meta Tags */}
         <meta property="og:title" content="Bank Security Solutions by Uniview Iran | راهکارهای امنیتی بانکی یونی ویو ایران" />
         <meta property="og:description" content="Complete security solutions for Iranian banks including video surveillance, access control, and fraud detection systems." />
-        <meta property="og:image" content="https://www.uniview-iran.ir/bank/Bank banner.webp" />
-        <meta property="og:url" content="https://www.uniview-iran.ir/bank" />
+        <meta property="og:image" content="https://unv-iran.com/bank/Bank banner.webp" />
+        <meta property="og:url" content="https://unv-iran.com/bank" />
         <meta property="og:type" content="website" />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Uniview Iran Bank Security Solutions" />
         <meta name="twitter:description" content="Advanced security solutions for Iranian banks and financial institutions" />
-        <meta name="twitter:image" content="https://www.uniview-iran.ir/bank/Bank banner.webp" />
+        <meta name="twitter:image" content="https://unv-iran.com/bank/Bank banner.webp" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English, Persian" />
         <meta name="revisit-after" content="7 days" />
         <meta name="author" content="Uniview Iran" />
-        <link rel="canonical" href="https://www.uniview-iran.ir/bank" />
+        <link rel="canonical" href="https://unv-iran.com/bank" />
         
         {/* Structured Data */}
         <script

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         siteName: 'Uniview Iran',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/stadium',
+        canonical: 'https://unv-iran.com/stadium',
         languages: {
             'en-US': '/en/stadium',
             'fa-IR': '/fa/stadium',

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         siteName: 'Uniview Iran',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/terms',
+        canonical: 'https://unv-iran.com/terms',
         languages: {
             'en-US': '/en/terms',
             'fa-IR': '/fa/terms',

@@ -70,8 +70,8 @@ const About = () => {
             "@type": "Organization",
             "name": "Uniview Iran",
             "description": "Authorized distributor of Uniview security and surveillance solutions in Iran",
-            "url": "https://www.uniview-iran.ir/about",
-            "logo": "https://www.uniview-iran.ir/logo.png",
+            "url": "https://unv-iran.com/about",
+            "logo": "https://unv-iran.com/logo.png",
             "sameAs": [
               "https://www.linkedin.com/company/uniview-iran",
               "https://www.facebook.com/univiewiran",

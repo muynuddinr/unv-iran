@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: 'https://www.uniview-iran.ir/shopping-mall',
+        canonical: 'https://unv-iran.com/shopping-mall',
         languages: {
             'en-US': '/en/shopping-mall',
             'fa-IR': '/fa/shopping-mall',

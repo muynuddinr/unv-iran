@@ -17,7 +17,7 @@ const Cookies = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Uniview Iran",
-      "url": "https://www.uniview-iran.ir"
+      "url": "https://unv-iran.com"
     },
     "inLanguage": ["en", "fa"],
     "isAccessibleForFree": true,
@@ -34,13 +34,13 @@ const Cookies = () => {
         {/* Open Graph / Social Media Meta Tags */}
         <meta property="og:title" content="Cookie Policy | سیاست کوکی - Uniview Iran" />
         <meta property="og:description" content="Understanding how Uniview Iran uses cookies to enhance your security solutions experience. | نحوه استفاده از کوکی ها در یونی ویو ایران" />
-        <meta property="og:url" content="https://www.uniview-iran.ir/cookies" />
+        <meta property="og:url" content="https://unv-iran.com/cookies" />
         <meta property="og:type" content="website" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English, Persian" />
-        <link rel="canonical" href="https://www.uniview-iran.ir/cookies" />
+        <link rel="canonical" href="https://unv-iran.com/cookies" />
         
         {/* Structured Data */}
         <script
