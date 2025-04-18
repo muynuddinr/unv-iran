@@ -23,6 +23,8 @@ const nextConfig = {
       },
     ],
   },
+  // Ensure sitemap and robots are included in the output
+  output: 'standalone',
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
