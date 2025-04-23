@@ -19,7 +19,7 @@ const ContactPage = () => {
       "@type": "ContactPoint",
       "telephone": "+1-555-123-4567",
       "contactType": "customer service",
-      "email": "info@uniview.com",
+      "email": "sales@unv-iran.com ",
       "areaServed": "IR",
       "availableLanguage": ["en", "fa"]
     },
@@ -174,10 +174,10 @@ const ContactPage = () => {
                   <div>
                     <p className="text-gray-600 text-sm">{t('home.contact.emailLabel') || 'Email'}</p>
                     <a 
-                      href="mailto:info@uniview.com" 
+                      href="mailto:sales@unv-iran.com " 
                       className="text-blue-800 hover:text-blue-600 font-medium"
                     >
-                      info@uniview.com
+                      sales@unv-iran.com 
                     </a>
                   </div>
                 </div>
@@ -194,18 +194,6 @@ const ContactPage = () => {
                     >
                       +971 559025905
                     </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300">
-                  <div className="bg-blue-100 p-3 rounded-full">
-                    <FiMapPin className="text-blue-600 text-2xl" />
-                  </div>
-                  <div>
-                    <p className="text-gray-600 text-sm">{t('home.contact.addressLabel') || 'Address'}</p>
-                    <p className="text-gray-800 font-medium">
-                      {t('home.contact.address') || '123 Tech Lane, Innovation Park, CA 94000'}
-                    </p>
                   </div>
                 </div>
               </div>

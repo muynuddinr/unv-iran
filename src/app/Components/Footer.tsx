@@ -68,10 +68,10 @@ const Footer = () => {
   ];
 
   const supportLinks = [
-    { href: '/support', label: t('home.footer.technicalSupport') || 'Technical Support' },
-    { href: '/faq', label: t('home.footer.faq') || 'FAQ' },
-    { href: '/downloads', label: t('home.footer.downloads') || 'Downloads & Resources' },
-    { href: '/warranty', label: t('home.footer.warranty') || 'Warranty Information' },
+    { href: '/contact', label: t('home.footer.technicalSupport') || 'Technical Support' },
+    // { href: '/faq', label: t('home.footer.faq') || 'FAQ' },
+    // { href: '/downloads', label: t('home.footer.downloads') || 'Downloads & Resources' },
+    // { href: '/warranty', label: t('home.footer.warranty') || 'Warranty Information' },
   ];
 
   const legalLinks = [
@@ -216,23 +216,16 @@ const Footer = () => {
               {t('home.footer.contactTitle') || 'Contact Us'}
             </h4>
             <div className="space-y-4">
-              <div className="flex items-start">
-                <FiMapPin className="text-blue-600 mt-1 mr-3 flex-shrink-0" />
-                <span className="text-gray-600">
-                  {t('home.footer.address') || '123 Security Avenue, Suite 101'}<br />
-                  {t('home.footer.city') || 'San Francisco, CA 94103'}
-                </span>
-              </div>
               <div className="flex items-center">
                 <FiPhone className="text-blue-600 mr-3 flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+971 559025905" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  +971 559025905
                 </a>
               </div>
               <div className="flex items-center">
                 <FiMail className="text-blue-600 mr-3 flex-shrink-0" />
-                <a href="mailto:info@uniview.com" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  info@uniview.com
+                <a href="mailto:sales@unv-iran.com " className="text-gray-600 hover:text-blue-600 transition-colors">
+                  sales@unv-iran.com 
                 </a>
               </div>
             </div>
@@ -242,7 +235,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-600 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} {t('home.footer.copyright') || 'Uniview Technologies. All rights reserved.'}
+            &copy; {new Date().getFullYear()} {t('home.footer.copyright') || 'Uniview Iran. All rights reserved.'}
           </div>
           <div className="flex space-x-6">
             {legalLinks.map((link) => (

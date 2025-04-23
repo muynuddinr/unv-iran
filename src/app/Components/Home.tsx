@@ -89,12 +89,12 @@ const Home = () => {
                 >
                   {t('home.exploreProducts')}
                 </Link>
-                <Link 
+                {/* <Link 
                   href="/demo" 
                   className="bg-white text-blue-600 border border-blue-200 hover:border-blue-300 px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow hover:shadow-md transform hover:-translate-y-1"
                 >
                   {t('home.requestDemo')}
-                </Link>
+                </Link> */}
               </motion.div>
             </div>
             
@@ -240,12 +240,6 @@ const Home = () => {
                   {feature.description}
                 </p>
                 <div className="mt-6">
-                  <Link 
-                    href={`/products/${feature.title.toLowerCase().replace(/\s+/g, '-')}`} 
-                    className={`text-${feature.color}-600 font-medium flex items-center text-sm hover:underline`}
-                  >
-                    Learn more <FiArrowRight className="ml-2 text-sm" />
-                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -591,7 +585,7 @@ const Home = () => {
           >
             <p className="text-gray-600 mb-6">{t('home.stillQuestions')}</p>
             <Link 
-              href="/support" 
+              href="/contact" 
               className="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors"
             >
               {t('home.contactSupport')} <FiArrowRight className="ml-2" />

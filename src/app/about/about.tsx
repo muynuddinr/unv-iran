@@ -370,7 +370,7 @@ const About = () => {
                   {t('home.about.ctaButton1') || "Contact Us"}
                 </Link>
                 <Link 
-                  href="/products" 
+                  href="/solutions" 
                   className="bg-transparent text-white border-2 border-white hover:bg-white/10 px-8 py-4 rounded-full font-medium transition-all duration-300 text-lg flex items-center justify-center"
                 >
                   {t('home.about.ctaButton2') || "Explore Our Solutions"}
