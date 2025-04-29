@@ -12,6 +12,14 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email, password } = body;
 
+    // Debugging - log the received credentials and environment variables
+    console.log('Received login attempt:', { email });
+    console.log('Expected credentials:', { 
+      expectedEmail: ADMIN_EMAIL, 
+      emailMatches: email === ADMIN_EMAIL,
+      passwordMatches: password === ADMIN_PASSWORD 
+    });
+
     // Check if credentials match
     if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
       // Create a JWT token
@@ -29,14 +37,22 @@ export async function POST(request: NextRequest) {
       cookieStore.set('admin_token', token, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        maxAge: 60 * 60 * 24, // 24 hours
+        maxAge: 60 * 60 * 24, // 24 hours in seconds
         path: '/',
-        sameSite: 'strict',
+        sameSite: 'lax',
       });
 
       return NextResponse.json({ success: true });
     } else {
-      return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
+      return NextResponse.json({ 
+        error: 'Invalid credentials',
+        debug: { 
+          providedEmail: email,
+          expectedEmail: ADMIN_EMAIL,
+          emailMatch: email === ADMIN_EMAIL,
+          passwordMatch: password === ADMIN_PASSWORD
+        } 
+      }, { status: 401 });
     }
   } catch (error) {
     console.error('Login error:', error);

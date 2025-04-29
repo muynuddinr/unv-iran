@@ -6,6 +6,11 @@ import { jwtVerify } from 'jose';
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
+  // Add this at the beginning of the middleware function
+  if (path === '/admin') {
+    return NextResponse.redirect(new URL('/admin/dashboard', request.url));
+  }
+  
   // Check if the path is an admin path (except login)
   if (path.startsWith('/admin') && !path.startsWith('/admin-login')) {
     const token = request.cookies.get('admin_token')?.value;
@@ -16,7 +21,7 @@ export async function middleware(request: NextRequest) {
     }
     
     try {
-      // Verify the token
+      // Verify the token using jose instead of jsonwebtoken
       const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'your-secret-key');
       await jwtVerify(token, secret);
       
@@ -27,11 +32,6 @@ export async function middleware(request: NextRequest) {
       console.error('Invalid token:', error);
       return NextResponse.redirect(new URL('/admin-login', request.url));
     }
-  }
-  
-  // Add this at the beginning of the middleware function
-  if (path === '/admin') {
-    return NextResponse.redirect(new URL('/admin/dashboard', request.url));
   }
   
   return NextResponse.next();
