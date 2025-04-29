@@ -6,6 +6,10 @@ import { jwtVerify } from 'jose';
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
+  // Add this at the top of your middleware function
+  console.log('Request path:', path);
+  console.log('Cookies:', JSON.stringify(Object.fromEntries(request.cookies)));
+  
   // Special case for /admin (without trailing slash)
   if (path === '/admin') {
     return NextResponse.redirect(new URL('/admin/dashboard', request.url));
@@ -15,23 +19,23 @@ export async function middleware(request: NextRequest) {
   if (path.startsWith('/admin') && !path.includes('admin-login')) {
     const token = request.cookies.get('admin_token')?.value;
     
-    // For debugging - log the token
-    console.log('Found token:', !!token);
-    
+    // Handle missing token
     if (!token) {
-      console.log('No token found, redirecting to login');
       return NextResponse.redirect(new URL('/admin-login', request.url));
     }
     
     try {
-      // Verify the token
+      // Verify token with more lenient error handling
       const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'your-secret-key');
       await jwtVerify(token, secret);
-      console.log('Token verified successfully');
       return NextResponse.next();
     } catch (error) {
       console.error('Token verification failed:', error);
-      return NextResponse.redirect(new URL('/admin-login', request.url));
+      
+      // Remove bad token
+      const response = NextResponse.redirect(new URL('/admin-login', request.url));
+      response.cookies.delete('admin_token');
+      return response;
     }
   }
   

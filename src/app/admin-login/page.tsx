@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { FiUser, FiLock, FiAlertCircle } from 'react-icons/fi';
 import Image from 'next/image';
@@ -12,6 +12,18 @@ export default function AdminLogin() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    // Check if we were redirected from /admin/* due to auth failure
+    const urlParams = new URLSearchParams(window.location.search);
+    const authFailed = urlParams.get('auth') === 'failed';
+    
+    if (authFailed) {
+      toast.error('Your session has expired. Please log in again.');
+      // Clear any bad cookies
+      document.cookie = 'admin_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+  }, []);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -32,8 +44,11 @@ export default function AdminLogin() {
       if (response.ok) {
         toast.success('Login successful!');
         
-        // Use direct window location instead of Next.js router
-        window.location.href = '/admin/dashboard';
+        // Add a short delay
+        setTimeout(() => {
+          // Use direct navigation to bypass Next.js router
+          window.location.href = '/admin/dashboard';
+        }, 300);
       } else {
         setError(data.error || 'Invalid credentials');
         toast.error(data.error || 'Invalid credentials');

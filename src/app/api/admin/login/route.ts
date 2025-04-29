@@ -34,14 +34,14 @@ export async function POST(request: NextRequest) {
         .setExpirationTime('24h')
         .sign(secretKey);
 
-      // Set the token in a cookie with proper settings
+      // Set the token in a cookie with proper settings for Vercel deployment
       const cookieStore = await cookies();
       cookieStore.set('admin_token', token, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
+        secure: true, // Always true for Vercel deployments
         maxAge: 60 * 60 * 24, // 24 hours
         path: '/',
-        sameSite: 'lax', // Changed from strict to allow redirects
+        sameSite: 'lax',
       });
 
       // Add a short delay before responding to ensure the cookie is properly set
