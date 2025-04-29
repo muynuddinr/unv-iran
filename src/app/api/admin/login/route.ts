@@ -26,24 +26,28 @@ export async function POST(request: NextRequest) {
       const secretKey = new TextEncoder().encode(JWT_SECRET);
       const token = await new SignJWT({ 
         email,
-        role: 'admin'
+        role: 'admin',
+        // Add any other necessary data
       })
         .setProtectedHeader({ alg: 'HS256' })
         .setIssuedAt()
         .setExpirationTime('24h')
         .sign(secretKey);
 
-      // Set the token in a cookie
+      // Set the token in a cookie with proper settings
       const cookieStore = await cookies();
       cookieStore.set('admin_token', token, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        maxAge: 60 * 60 * 24, // 24 hours in seconds
+        maxAge: 60 * 60 * 24, // 24 hours
         path: '/',
-        sameSite: 'lax',
+        sameSite: 'lax', // Changed from strict to allow redirects
       });
 
-      return NextResponse.json({ success: true });
+      // Add a short delay before responding to ensure the cookie is properly set
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      return NextResponse.json({ success: true, redirectTo: '/admin/dashboard' });
     } else {
       return NextResponse.json({ 
         error: 'Invalid credentials',

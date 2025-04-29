@@ -31,9 +31,12 @@ export default function AdminLogin() {
 
       if (response.ok) {
         toast.success('Login successful!');
-        // Immediate redirect and force refresh
-        router.push('/admin');
-        router.refresh();
+        
+        // Add a slight delay before redirecting to ensure cookie is set
+        setTimeout(() => {
+          router.push('/admin/dashboard');
+          router.refresh();
+        }, 500);
       } else {
         setError(data.error || 'Invalid credentials');
         toast.error(data.error || 'Invalid credentials');
