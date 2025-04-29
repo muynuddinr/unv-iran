@@ -32,11 +32,10 @@ export default function AdminLogin() {
       if (response.ok) {
         toast.success('Login successful!');
         
-        // Add a slight delay before redirecting to ensure cookie is set
+        // Direct navigation to dashboard with longer delay
         setTimeout(() => {
-          router.push('/admin/dashboard');
-          router.refresh();
-        }, 500);
+          window.location.href = '/admin/dashboard';
+        }, 1000);
       } else {
         setError(data.error || 'Invalid credentials');
         toast.error(data.error || 'Invalid credentials');
