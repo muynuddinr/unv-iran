@@ -6,7 +6,7 @@ import { jwtVerify } from 'jose';
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   
-  // Add this at the beginning of the middleware function
+  // Handling /admin exact path
   if (path === '/admin') {
     return NextResponse.redirect(new URL('/admin/dashboard', request.url));
   }
@@ -21,7 +21,7 @@ export async function middleware(request: NextRequest) {
     }
     
     try {
-      // Verify the token using jose instead of jsonwebtoken
+      // Verify the token using jose
       const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'your-secret-key');
       await jwtVerify(token, secret);
       
@@ -37,7 +37,7 @@ export async function middleware(request: NextRequest) {
   return NextResponse.next();
 }
 
-// See "Matching Paths" below to learn more
+// Update matcher to catch all admin routes
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: ['/admin', '/admin/:path*'],
 };

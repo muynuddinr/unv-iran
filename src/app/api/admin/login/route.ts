@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import jwt from 'jsonwebtoken';
+import { SignJWT } from 'jose';
 import { cookies } from 'next/headers';
 
 // Admin credentials stored in environment variables
@@ -22,15 +22,16 @@ export async function POST(request: NextRequest) {
 
     // Check if credentials match
     if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
-      // Create a JWT token
-      const token = jwt.sign(
-        { 
-          email,
-          role: 'admin',
-          exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24, // 24 hours
-        },
-        JWT_SECRET
-      );
+      // Create a JWT token using jose
+      const secretKey = new TextEncoder().encode(JWT_SECRET);
+      const token = await new SignJWT({ 
+        email,
+        role: 'admin'
+      })
+        .setProtectedHeader({ alg: 'HS256' })
+        .setIssuedAt()
+        .setExpirationTime('24h')
+        .sign(secretKey);
 
       // Set the token in a cookie
       const cookieStore = await cookies();
