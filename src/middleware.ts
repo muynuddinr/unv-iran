@@ -11,26 +11,26 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/admin/dashboard', request.url));
   }
   
-  // Only apply auth check to admin routes (excluding login)
-  if (path.startsWith('/admin') && !path.includes('/admin-login')) {
+  // Only protect admin routes that aren't the login page
+  if (path.startsWith('/admin') && !path.includes('admin-login')) {
     const token = request.cookies.get('admin_token')?.value;
     
+    // For debugging - log the token
+    console.log('Found token:', !!token);
+    
     if (!token) {
-      // Redirect to login page if no token
+      console.log('No token found, redirecting to login');
       return NextResponse.redirect(new URL('/admin-login', request.url));
     }
     
     try {
-      // Verify token using jose
+      // Verify the token
       const secret = new TextEncoder().encode(process.env.JWT_SECRET || 'your-secret-key');
       await jwtVerify(token, secret);
-      
-      // Token is valid, continue to the requested page
+      console.log('Token verified successfully');
       return NextResponse.next();
     } catch (error) {
       console.error('Token verification failed:', error);
-      
-      // Redirect to login on invalid token
       return NextResponse.redirect(new URL('/admin-login', request.url));
     }
   }

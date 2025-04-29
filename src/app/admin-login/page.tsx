@@ -32,10 +32,8 @@ export default function AdminLogin() {
       if (response.ok) {
         toast.success('Login successful!');
         
-        // Direct navigation to dashboard with longer delay
-        setTimeout(() => {
-          window.location.href = '/admin/dashboard';
-        }, 1000);
+        // Use direct window location instead of Next.js router
+        window.location.href = '/admin/dashboard';
       } else {
         setError(data.error || 'Invalid credentials');
         toast.error(data.error || 'Invalid credentials');
